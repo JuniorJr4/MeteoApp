@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../src/style.css" />
-    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="../src/icons/5-favicon-32.png"
+      type="image/x-icon"
+    />
+    <title>Météo</title>
   <script defer src="main.js"></script></head>
   <body>
     <header class="header">
       <div class="title">
         <h1>Météo App</h1>
-        <img src="#" alt="app icon" id="icon" />
+        <img src="../src/icons/5-new.png" alt="app icon" id="icon" />
       </div>
       <form>
         <label for="location-input">Enter a city or zip code:</label>
@@ -20,19 +25,17 @@
       </form>
     </header>
     <div id="content">
-      <div class="sidebar">
-        <aside id="aside">
-          <h3 id="location-name"></h3>
-          <img src="#" alt="weather icon" id="current-icon" />
-          <p id="current-condition"></p>
-          <p id="current-temp"></p>
-          <p id="max-temp-day-0"></p>
-          <p id="min-temp-day-0"></p>
-        </aside>
-      </div>
+      <aside id="aside">
+        <h3 id="location-name"></h3>
+        <img src="#" alt="weather icon" id="current-icon" />
+        <p id="current-condition"></p>
+        <p id="current-temp"></p>
+        <p id="chance-of-rain"></p>
+      </aside>
+
       <div class="main">
         <div class="main-header">
-          <h2 class="forecast">Forecast</h2>
+          <h2 class="forecast">Weekly Forecast</h2>
         </div>
         <div id="day-cards-wrapper"></div>
       </div>

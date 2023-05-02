@@ -4,22 +4,29 @@ export let globalData;
 const locationInput = document.querySelector("#location-input");
 //const submitButton = document.querySelector("#submit");
 
-export function init() {
+export async function init() {
+  let data = await getWeather('paris');
+  globalData = data;
+  console.log(globalData);
+  initDOM();
   const submitButton = document.querySelector("#submit");
-  submitButton.addEventListener("click", async(e) => {
-    e.preventDefault();
-    let data = await getLocation();
-    globalData = data;
-    console.log(data);
-    initDOM();
-    return data;
-  });
+  submitButton.addEventListener("click", handleSubmit);
+}
+
+async function handleSubmit(e) {
+  e.preventDefault();
+  let data = await getLocation();
+  globalData = data;
+  console.log(data);
+  initDOM();
+  return data;
 }
 
 export async function getLocation() {
   let location = locationInput.value;
   console.log(location);
   let data = await getWeather(location);
+  locationInput.value = "";
   return data;
 }
 
@@ -28,7 +35,7 @@ async function getWeather(location) {
   try {
     const response = await fetch(
       `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=7&aqi=no`,
-      { mode: "cors" },
+      { mode: "cors" }
     );
     if (!response.ok) {
       handleError(response.status); // create this function
