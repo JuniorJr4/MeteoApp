@@ -36,7 +36,7 @@ function createCurrentWeatherDOM() {
   currentConditionIconEl.src = currentConditionIconURL;
   currentConditionTextEl.textContent = currentConditionText;
   currentTempEl.textContent = `${currentTempC}\u2103`;
-  chanceOfRain.textContent = `Chance of rain today: ${rainChance}%`;
+  chanceOfRain.textContent = `Chance of rain: ${rainChance}%`;
 }
 function createForecastDOM() {
   const dayCardsWrapper = document.getElementById("day-cards-wrapper");

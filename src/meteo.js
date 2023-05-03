@@ -38,7 +38,8 @@ async function getWeather(location) {
       { mode: "cors" }
     );
     if (!response.ok) {
-      handleError(response.status); // create this function
+      handleError(response.status);
+      
     }
     const data = await response.json();
     //globalData = data;
@@ -50,4 +51,6 @@ async function getWeather(location) {
 }
 function handleError(status) {
   console.log(status);
+  alert("Location not found!");
+  return;
 }

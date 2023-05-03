@@ -35,7 +35,7 @@ body {
 .header {
   display: flex;
   flex-direction: column;
-  background-color: var(--darkGray);
+  
   
 }
 
@@ -44,6 +44,7 @@ body {
   align-items: center;
   column-gap: 25px;
   padding-left: 20px;
+  background-color: var(--autumn);
 }
 
 .main-header {
@@ -53,36 +54,49 @@ body {
 form {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   column-gap: 10px;
-  background-color: var(--brown);
+  background-color: var(--darkGray);
   padding: 15px;
   border: 1px solid var(--myBlack);
+  color: var(--lightGray);
 }
 
 input {
+  font-family: "Roboto";
   background-color: var(--lightGray);
   border: 2px solid var(--myBlack);
   border-radius: 5px;
   height: 25px;
+}
+input:focus {
+  background-color: var(--autumn);
+  border: 2px solid var(--brown);
+  outline: none;
 }
 
 button {
   border: 2px solid var(--myBlack);
   border-radius: 5px;
   background-color: var(--lightGray);
+  height: 30px;
+  transition: background-color 0.2s ease-in-out;
 }
 
 button:hover {
-  background-color: var(--myBlack);
-  color: var(--lightGray);
+  background-color: var(--autumn);
+  /* color: var(--lightGray); */
+  border: 2px solid var(--brown);
 }
-.title > img {
-  height: 48px;
-  background-color: transparent;
+button:active {
+  background-color: var(--brown);
+  
+  border: 2px solid var(--autumn);
 }
+
 #icon {
   height: 48px;
-  background: var(--darkGray);
+  background: var(--autumn);
   color: black;
 }
 #current-icon {
@@ -96,7 +110,7 @@ button:hover {
   min-height: 100vh;
   border-right: 1px solid var(--myBlack);
   padding: 0 15px;
-  background-color: var(--darkGray);
+  background-color: var(--autumn);
 }
 
 #content {
