@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/JuniorJr4/MeteoApp/issues"
   },
-  "homepage": "https://github.com/JuniorJr4/MeteoApp#readme",
+  "homepage": "https://github.com/JuniorJr4/MeteoApp",
   "devDependencies": {
     "css-loader": "^6.7.3",
     "html-webpack-plugin": "^5.5.1",
