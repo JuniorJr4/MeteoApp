@@ -6,7 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
+
     "build": "webpack && cp -r dist/* ."
+
+   
+ 
   },
   "repository": {
     "type": "git",
@@ -18,9 +22,10 @@
   "bugs": {
     "url": "https://github.com/JuniorJr4/MeteoApp/issues"
   },
-  "homepage": "https://github.com/JuniorJr4/MeteoApp#readme",
+  "homepage": "https://juniorjr4.github.io/MeteoApp",
   "devDependencies": {
     "css-loader": "^6.7.3",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.1",
     "style-loader": "^3.3.2",
     "webpack": "^5.80.0",
