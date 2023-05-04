@@ -34,7 +34,7 @@ async function getWeather(location) {
   const apiKey = "ea81db988f014e72817121433232404";
   try {
     const response = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=7&aqi=no`,
+      `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=7&aqi=no`,
       { mode: "cors" }
     );
     if (!response.ok) {
