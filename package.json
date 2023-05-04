@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/JuniorJr4/MeteoApp/issues"
   },
-  "homepage": "http://juniorjr4.github.io/MeteoApp",
+  "homepage": "https://juniorjr4.github.io/MeteoApp",
   "devDependencies": {
     "css-loader": "^6.7.3",
     "gh-pages": "^5.0.0",
